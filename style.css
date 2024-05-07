@@ -1,0 +1,123 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 35px;
+    box-shadow: 3px 0px 3px rgba(10, 7, 18,0.2);
+}
+header nav ul li{
+ display: inline-block;
+}
+header nav ul li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding:5px 15px;
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+}
+header nav ul li a:hover{
+    background-color: #FEA255;
+    color: #FFF7E9;
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+}
+#banner{
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover ;
+    background-image: url("https://th.bing.com/th/id/R.866b4e9e8950fc3969c5ddf289ca697f?rik=YZHjhSXlwU7qfg&pid=ImgRaw&r=0");
+}
+#banner p{
+    font-size: 60px;
+    background-color:rgba(225, 247, 225, 0.7) ;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+/*************** SECTIONS ****************/
+section h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.9em;
+    text-align: center;
+
+}
+.flex-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 60px;
+    gap: 40px;
+}
+.flex-section div h3{
+    font-size: 1.4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #00522E;
+    background-color: #f1f1ef;
+    padding: 10px 15px;
+}
+.flex-section div p{
+    text-align: justify;
+    font-size: 1.3em;
+}
+.flex-section.service div{
+    position: relative;
+    height: 400px;
+    width: 24%;
+}
+.flex-section.service div img{
+    height: 100%;
+    width: 100%;
+}
+.flex-section.service div h3{
+    position: absolute;
+    text-align: center;
+    top: 150px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+   
+}
+.flex-section table{
+    width: 100%;
+    margin-top: 50px;
+    font-size: 1.8em;
+}
+.flex-section table th, .flex-section table td{
+    text-align: left;
+    padding: 20px;
+}
+.flex-section table th{
+    background-color: #c7dad4;
+}
+.flex-section table td{
+    background-color: #f1f1ef;
+}
+.flex-section table a{
+    display: inline-block;
+    padding: 8px 12px;
+    color: white;
+    background-color: #3894a3;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: lighter;
+}
+.flex-section.images article{
+    height: 450px;
+    width: 32%;
+}
+.flex-section.images article img{
+    height: 100%;
+    width: 100%;
+}
+.flex-section.images article h3{
+    font-size: 1.8em;
+}
