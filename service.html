@@ -61,7 +61,74 @@
                 copyright ODC 2024 tout droit reservé
             </p>
         </div>
-
+        <script>
+            window.onload = () =>{
+                const heading = document.createElement("h1");
+                const headingText = document.createTextNode("Gros titre");
+                heading.appendChild(headingText);
+                document.body.appendChild(heading);
+            }
+        
+            const header = document.querySelector('header nav')
+            header.style.backgroundColor="lightGrey"
+            console.log(header.textContent)
+        
+            function bienvenu(){
+                alert('Wellcome')
+            }
+        
+             document.querySelector('h2').addEventListener('mouseover' , (event) => {
+                event.target.style.color = 'blue'
+            })
+        
+            document.querySelector('h2').addEventListener('mouseleave' , (event) => {
+                event.target.style.color = 'red'
+            })
+        
+            
+            const theme = (event) =>{
+                document.body.style.background = event.target.value
+            }
+        
+        
+        
+        
+           </script>
+           <script>
+            const titre3 = document.querySelectorAll('h3')
+            console.log(titre3.length)
+        
+            for(let i = 0; i <titre3.length; i++){
+                titre3[i].addEventListener('click', () => {
+                    titre3[i].style.color = 'green'
+        
+                })
+            }
+           </script>
+           <script>
+            function supprimer(event){
+                event.preventDefault()
+                const link = event.target.getAttribute('href')
+        
+                document.querySelector('.contact form').setAttribute('action', link)
+            }
+            function editer(event){
+                event.preventDefault()
+                const link = event.target.getAttribute('href')
+        
+                document.querySelector('.contact form').setAttribute('action', link)
+        
+                const form = document.querySelector('.contact form')
+        
+                const tr = event.target.closest('tr')
+                //(tr.children[0].textContent)
+                form.name.value =tr.children[0].textContent
+                email.value =tr.children[1].textContent
+                message.value =tr.children[2].textContent
+            }
+        
+        
+           </script>
     </footer>
     
 </body>

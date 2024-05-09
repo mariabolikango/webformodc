@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="getData()">
+    <header>
+        <div class="logo">
+          <img src="https://static.vecteezy.com/system/resources/previews/000/404/753/original/modern-company-logo-design-vector.jpg" alt="logo" width="80">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">A propos</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="article.html">Article</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <h1>Article</h1>
+    <section>
+        <div>
+            <form action="" method="post" id="createForm" onsubmit="creer(event)">
+                <p>User<input type="number" name="userId"></p>
+                <p>Titre<input type="text" name="title"></p>
+                <p>Contenu<textarea name="body" col ="30" rows="10"></textarea></p>
+               
+                <p><button type="submit">Valider</button></p>
+            </form>
+        </div>
+        <div>
+            <table id="tb-article">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>User</th>
+                        <th>Titre</th>
+                        <th>Contenu</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+    </section>
+    <script src="js/article.js"></script>
+    
+</body>
+</html>
